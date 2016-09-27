@@ -1,4 +1,4 @@
-/* globals _ */
+/* globals _, alert */
 
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
@@ -58,7 +58,7 @@ setTimeout(sayHi, 2000);
 // Put your answer below -------------------------
 
 setTimeout(function() {
-  alert("Hello, World!");
+  alert('Hello, World!');
 }, 2000);
 // -----------------------------------------------
 
@@ -90,8 +90,13 @@ console.log("The letter is", letter);
 // Put your answer below -------------------------
 
 // answer is [c]; z then y;
-// letter is set to x, then set to z, then a console.log is called that returns The letter is z (fires immediately)
-// the setTimeout is called, letter is set to y, then a console.log is called that returns The letter is y (fires after 1 ms delay)
+// letter is set to x;
+// setTimeout is set; will fire after 1 ms;
+// letter is set to z;
+// console.log is called that returns 'The letter is z'
+// setTimeout fires;
+// letter is set to y;
+// console.log is called that returns 'The letter is y'
 
 // -----------------------------------------------
 
@@ -291,6 +296,17 @@ var accelerate = function(amount) {
 };
 
 // Put your answer below -------------------------
+
+// speed is an object of type Number
+// if you do not pass a parameter, amount is undefined
+// adding numbers to undefined results in NaN (not-a-number)
+
+var speed = 0;
+
+var accelerate = function (amount){
+  amount = amount || 1;
+  speed += amount;
+};
 
 
 // -----------------------------------------------
