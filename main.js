@@ -1,3 +1,5 @@
+/* globals _ */
+
 //////////////////////////////////////////////////
 //////////////////////////////////////////////////
 //     ___  ___________  _______________  ___   //
@@ -187,12 +189,16 @@ foo = 'bar';
 // function.
 
 var callTenTimes = function(callback) {
-  var range = _.range(10);
+  var range = _.range(10); // returns [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
   _.each(range, callback);
 };
 
 // Put your answer below -------------------------
 
+var callNtimes = function(callback, num){
+  var range = _.range(num);
+  _.each(range, callback);
+};
 
 // -----------------------------------------------
 
