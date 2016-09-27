@@ -87,6 +87,9 @@ console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 
+// answer is [c]; z then y;
+// letter is set to x, then set to y, then a console.log is called that returns The letter is z (fires immediately)
+// the setTimeout is called, letter is set to y, then a console.log is called that return The letter is y (fires after 1 ms delay)
 
 // -----------------------------------------------
 
